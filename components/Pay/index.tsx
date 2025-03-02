@@ -5,6 +5,7 @@ import {
   Tokens,
   PayCommandInput,
 } from "@worldcoin/minikit-js";
+import {Button} from "@worldcoin/mini-apps-ui-kit-react";
 
 const sendPayment = async () => {
   try {
@@ -71,8 +72,8 @@ const handlePay = async () => {
 
 export const PayBlock = () => {
   return (
-    <button className="bg-blue-500 p-4" onClick={handlePay}>
+    <Button variant={"primary"} className="bg-blue-500 p-4" onClick={handlePay}>
       Pay
-    </button>
+    </Button>
   );
 };
